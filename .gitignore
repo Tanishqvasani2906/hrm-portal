@@ -1,0 +1,27 @@
+# Ignore virtual environment
+env/
+env
+/env
+
+# Ignore VSCode workspace settings
+.vscode/
+
+# Node.js dependencies (if used in emp_frontend)
+emp_frontend/node_modules/
+emp_frontend/.env/
+
+# Python-related
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Django secret key file (if any)
+emp_backend/.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

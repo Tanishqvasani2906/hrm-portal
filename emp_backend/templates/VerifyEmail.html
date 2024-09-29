@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Your Email</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background-color: #e8e8ff;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #00008af0;
+        text-align: center;
+      }
+      .content {
+        margin-top: 20px;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #00008af0;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 16px;
+      }
+      .button:hover {
+        background-color: #7676dc;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: center;
+        color: #707070;
+        font-size: 0.9em;
+      }
+      .link {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Verify Your Email</h1>
+      <div class="content">
+        <p>Hello,</p>
+        <p>
+          Thank you for signing up! Please click the button below to verify your
+          email address:
+        </p>
+        <div class="link">
+          <a href="{{ verification_link }}" class="button">Verify Email</a>
+        </div>
+        <p>
+          If you didn't create an account, you can safely ignore this email.
+        </p>
+      </div>
+      <div class="footer">
+        <p>Best regards,<br />Your App Team</p>
+        <p>This is an automated message, please do not reply to this email.</p>
+      </div>
+    </div>
+  </body>
+</html>
